@@ -5,6 +5,13 @@ body {
   padding-bottom: 20px;
 }
 
+img {
+  border: 0px;
+  width: 15%;
+  padding: 20px;
+  margin-top: 10px;
+}
+
 .welcome {
   padding-bottom: 20px;
 }
