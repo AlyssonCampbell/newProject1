@@ -46,10 +46,10 @@ function getFood() {
   return foodChoices;
 }
 
-document.querySelector("button").addEventListener("click", event => {
-  event.preventDefault();
-  let score = 0;
-  getAnimalDiets();
-  getFood();
-  checkTheFood(foodChoices, score);
-});
+// document.querySelector("button").addEventListener("click", event => {
+//   event.preventDefault();
+//   let score = 0;
+//   getAnimalDiets();
+//   getFood();
+//   checkTheFood(foodChoices, score);
+// });
