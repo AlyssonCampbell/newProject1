@@ -1,3 +1,25 @@
 body {
-  background-color: aliceblue;
+  font-family: 'Gaegu', cursive;
+  background-color: rgb(99, 136, 94);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.welcome {
+  padding-bottom: 20px;
+}
+
+.game {
+  padding-bottom: 20px;
+}
+
+button {
+  font-family: 'Gaegu', cursive;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+select {
+  font-family: 'Gaegu', cursive;
+  font-size: 20px;
 }
