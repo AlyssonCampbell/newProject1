@@ -10,10 +10,14 @@ function makeGame() {
 makeGame();
 
 function addPictures(i, animalDivs) {
-  let animalPics = document.createElement("img");
+  makePicture(i);
+  animalDivs.appendChild(animalPics);
+}
+
+function makePicture(i) {
+  animalPics = document.createElement("img");
   animalPics.setAttribute("src", `img/${animals[i].name}.png`)
   animalPics.setAttribute("alt", `${animals[i].name}`)
-  animalDivs.appendChild(animalPics);
 }
 
 window.addEventListener("load", () => {
@@ -25,9 +29,11 @@ window.addEventListener("load", () => {
         console.log("click " + animalPictures[i].alt);
         let modal = document.getElementById("animalModal");
         modal.style.display = "block";
+        let displayAnimal = document.querySelector(".modalPic");
+        makePicture(i);
+        displayAnimal.appendChild(animalPics);
         let displayName = document.querySelector(".animalName")
         displayName.innerHTML = (animals[i].name);
-
       })
   }
 })
@@ -35,7 +41,6 @@ window.addEventListener("load", () => {
 let span = document.getElementsByClassName("close")[0];
 
 span.addEventListener("click", event => {
+  document.querySelector(".modalPic").innerHTML = ""
   animalModal.style.display = "none";
 });
-
-// function modalPicture

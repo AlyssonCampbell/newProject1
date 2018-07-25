@@ -6,13 +6,17 @@
 //each question is "(sound)! I am a hungry (animal name), feed me..."
 //loop through all of the questions, when questions are all answered then give score
 
-function getAnimalDiets() {
-  animalDiets = [];
-  for (let i = 0; i < animals.length; i++) {
-    animalDiets.push(animals[i].diet);
-  }
-  return animalDiets;
-}
+// function getAnimalDiets() {
+//   animalDiets = [];
+//   for (let i = 0; i < animals.length; i++) {
+//     animalDiets.push(animals[i].diet);
+//   }
+//   return animalDiets;
+// }
+
+document.querySelector("button").addEventListener("click", evt => {
+  console.log(evt.animal.name);
+})
 
 function checkTheFood(foodChoices, score) {
   for (let i = 0; i < animalDiets.length; i++) {
