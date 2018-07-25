@@ -5,3 +5,17 @@
 //create the questions by shuffling the animals and displaying them all in div's
 //each question is "(sound)! I am a hungry (animal name), feed me..."
 //loop through all of the questions, when questions are all answered then give score
+let score = 0;
+
+// let dietButton = document.querySelectorAll(".diet");
+
+guessButtons = document.querySelectorAll("submit")
+
+// for (let i = 0; i < guessButtons.length; i++) {
+//   addEventListener("click", evt => {
+//     console.log("button clicked!")
+//   })
+// }
+guessButtons.addEventListener("click", evt => {
+  console.log(this.guessButtons.value);
+})

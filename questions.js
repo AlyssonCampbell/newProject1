@@ -8,10 +8,6 @@
 //   diet: "omnivore, herbivore or carnivore",
 //   picture: "picture.jpg"
 // }
-// object = foods {
-//   type: "meat, plants or meat & plants",
-//   eatenBy: "omnivore, herbivore or carnivore"
-// }
 
 let animals = [{
     name: "lion",
@@ -24,7 +20,7 @@ let animals = [{
   },
   {
     name: "hedgehog",
-    diet: "meat and plants",
+    diet: "meatAndPlants",
     picture: "hedgehog.png"
   },
   {
@@ -44,7 +40,7 @@ let animals = [{
   },
   {
     name: "raccoon",
-    diet: "meat and plants",
+    diet: "meatAndPlants",
     picture: "raccoon.png"
   },
   {
