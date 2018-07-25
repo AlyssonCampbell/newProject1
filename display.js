@@ -15,3 +15,27 @@ function addPictures(i, animalDivs) {
   animalPics.setAttribute("alt", `${animals[i].name}`)
   animalDivs.appendChild(animalPics);
 }
+
+window.addEventListener("load", () => {
+  let animalPictures = document.querySelectorAll("img")
+  console.log(animalPictures);
+  for (let i = 0; i < animalPictures.length; i++) {
+    animalPictures[i].addEventListener("click",
+      event => {
+        console.log("click " + animalPictures[i].alt);
+        let modal = document.getElementById("animalModal");
+        modal.style.display = "block";
+        let displayName = document.querySelector(".animalName")
+        displayName.innerHTML = (animals[i].name);
+
+      })
+  }
+})
+
+let span = document.getElementsByClassName("close")[0];
+
+span.addEventListener("click", event => {
+  animalModal.style.display = "none";
+});
+
+// function modalPicture
