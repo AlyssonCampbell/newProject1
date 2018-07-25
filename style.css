@@ -1,7 +1,12 @@
 body {
-  background-color: aliceblue;
+  font-family: 'Gaegu', cursive;
+  background-color: rgb(119, 141, 116);
   text-align: center;
   padding-top: 50px;
+}
+
+.welcome {
+  padding-bottom: 20px;
 }
 
 .animal {
@@ -26,7 +31,18 @@ img {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+button {
+  font-family: 'Gaegu', cursive;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+select {
+  font-family: 'Gaegu', cursive;
+  font-size: 20px;
 }
 
 .modal-content {
