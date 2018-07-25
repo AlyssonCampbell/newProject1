@@ -21,7 +21,18 @@ function checkTheFood(foodChoices, score) {
     }
   }
   let results = document.getElementById("score");
-  results.innerHTML = `You got ${score} out of ${animalDiets.length} correct!`
+  resultResponse(results, score)
+}
+
+function resultResponse(results, score) {
+  let response = `You got ${score} out of ${animalDiets.length} correct!`
+  if (score < 6) {
+    results.innerHTML = response + " Nice try! play again?"
+  } else if (score < 10 && score > 6) {
+    results.innerHTML = response + " Good Job!"
+  } else {
+    results.innerHTML = response + " Wow! You know your animals!"
+  }
 }
 
 function getFood() {
