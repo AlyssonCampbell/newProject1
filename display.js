@@ -22,11 +22,9 @@ function makePicture(i) {
 
 window.addEventListener("load", () => {
   let animalPictures = document.querySelectorAll("img")
-  console.log(animalPictures);
   for (let i = 0; i < animalPictures.length; i++) {
     animalPictures[i].addEventListener("click",
       event => {
-        console.log("click " + animalPictures[i].alt);
         let modal = document.getElementById("animalModal");
         modal.style.display = "block";
         let displayAnimal = document.querySelector(".modalPic");

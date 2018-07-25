@@ -13,6 +13,10 @@
 //   }
 //   return animalDiets;
 // }
+//TODO:
+//updates for new modal gameplay:
+//when the modal is open have an event listener for the submit and display right or wrong
+//once answered give option for hint of carnivore/herbivore/omnivore
 
 document.querySelector("button").addEventListener("click", evt => {
   console.log(evt.animal.name);
