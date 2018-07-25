@@ -1,11 +1,4 @@
-//keep track of score
-//listen to each button, when that particular button is clicked, compare the drop-down chosen to the
-//diet of the animal.  If it's a match, give a point
-//once all are answered give total score
-//create the questions by shuffling the animals and displaying them all in div's
-//each question is "(sound)! I am a hungry (animal name), feed me..."
-//loop through all of the questions, when questions are all answered then give score
-
+//makes an array from the animals array of all of the diets to compare against
 function getAnimalDiets() {
   animalDiets = [];
   for (let i = 0; i < animals.length; i++) {
@@ -13,7 +6,7 @@ function getAnimalDiets() {
   }
   return animalDiets;
 }
-
+//checks the items within the foods chosen by the player against the animal diets to determine score
 function checkTheFood(foodChoices, score) {
   for (let i = 0; i < animalDiets.length; i++) {
     if (animalDiets[i] === foodChoices[i]) {
@@ -23,7 +16,7 @@ function checkTheFood(foodChoices, score) {
   let results = document.getElementById("score");
   resultResponse(results, score)
 }
-
+//gives the results with messages based on the score achieved
 function resultResponse(results, score) {
   let response = `You got ${score} out of ${animalDiets.length} correct!`
   if (score < 6) {
@@ -34,7 +27,7 @@ function resultResponse(results, score) {
     results.innerHTML = response + " Wow! You know your animals!"
   }
 }
-
+//creates an array containing all of the player-submitted choices from the dom
 function getFood() {
   foodChoices = [];
   let zookeeperChoices = document.querySelectorAll(".animal");
@@ -44,7 +37,7 @@ function getFood() {
   }
   return foodChoices;
 }
-
+//event listener to run the above functions when the submit button is clicked
 document.querySelector("button").addEventListener("click", event => {
   event.preventDefault();
   let score = 0;

@@ -11,16 +11,19 @@
 </head>
 
 <body>
+  <!-- heading for the page -->
   <div class="welcome">
     <h1>Welcome Junior Zookeeper!</h1>
     <h2>It's feeding time at the zoo!</h2>
     <h2>Can you pick the right food for each of the animals?</h2>
   </div>
+  <!-- the game board with all of the animals, and dropdown options -->
   <div class="game">
     <div class="animal lion">
       <img src="img/lion.png" alt="lion">
       <h2>The Lion wants to eat:</h2>
       <select class="diet">
+        <!-- defaults to an empty value, will return as empty and be considered wrong when scored -->
         <option value="">Choose the food!</option>
         <option value="carnivore">Meat</option>
         <option value="herbivore">Plants</option>
@@ -117,10 +120,14 @@
         <option value="omnivore">Meat and Plants</option>
       </select>
     </div>
+    <!-- button to submit all of the input options chosen above -->
     <button type="submit">Feed the animals!</button>
   </div>
+  <!-- empty div to display the result of the score message -->
   <div id="score"></div>
+  <!-- .js file that contains the object array with animal information -->
   <script src="questions.js"></script>
+  <!-- gameplay script -->
   <script src="script.js"></script>
 </body>
 
