@@ -11,51 +11,51 @@
 
 let animals = [{
     name: "lion",
-    diet: "meat",
+    diet: "carnivore",
     picture: "lion.png"
   }, {
     name: "panda",
-    diet: "plants",
+    diet: "herbivore",
     picture: "panda.png"
   },
   {
     name: "hedgehog",
-    diet: "meatAndPlants",
+    diet: "omnivore",
     picture: "hedgehog.png"
   },
   {
     name: "shark",
-    diet: "meat",
+    diet: "carnivore",
     picture: "shark.png"
   },
   {
     name: "wolf",
-    diet: "meat",
+    diet: "carnivore",
     picture: "wolf.png"
   },
   {
     name: "elephant",
-    diet: "plants",
+    diet: "herbivore",
     picture: "elephant.png"
   },
   {
     name: "raccoon",
-    diet: "meatAndPlants",
+    diet: "omnivore",
     picture: "raccoon.png"
   },
   {
     name: "kangaroo",
-    diet: "plants",
+    diet: "herbivore",
     picture: "kangaroo.png"
   },
   {
     name: "iguana",
-    diet: "plants",
+    diet: "herbivore",
     picture: "iguana.png"
   },
   {
     name: "ferret",
-    diet: "meat",
+    diet: "carnivore",
     picture: "ferret.png"
   }
 ]
