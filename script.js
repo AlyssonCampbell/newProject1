@@ -53,3 +53,5 @@ function getFood() {
   }
   return foodChoices;
 }
+
+//reviewed and no changes needed
